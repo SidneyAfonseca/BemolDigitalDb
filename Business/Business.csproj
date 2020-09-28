@@ -113,7 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Clientes.cs" />
-    <Compile Include="Interface\ICliente.cs" />
+    <Compile Include="Interface\IUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

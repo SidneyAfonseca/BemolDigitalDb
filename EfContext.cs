@@ -12,7 +12,7 @@ namespace Dados
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string stringSqlServerConection = @"Data Source=DESKTOP-RLH04LV\SQLEXPRESS;Initial Catalog=BemolDigtalDB;ConnectRetryCount=0;Persist Security Info=false;User ID=sa;Password=123";
+            string stringSqlServerConection = @"Data Source=DESKTOP-RLH04LV\SQLEXPRESS;Initial Catalog=BemolDigtalDB;ConnectRetryCount=0;Persist Security Info=false;User ID=sa;Password=sa123";
             
             optionsBuilder.UseSqlServer(stringSqlServerConection);
         }
