@@ -8,7 +8,7 @@ namespace Dados
 {
     public class EfContext : DbContext
     {
-        public DbSet<Clientes> Clientes { get; set; }
+        public DbSet<Usuarios> Usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

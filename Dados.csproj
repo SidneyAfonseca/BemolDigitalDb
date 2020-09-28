@@ -144,7 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EfContext.cs" />
-    <Compile Include="Entity\Clientes.cs" />
+    <Compile Include="Entity\Usuarios.cs" />
     <Compile Include="Interface\IEntityBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

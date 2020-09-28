@@ -29,31 +29,41 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCad = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txbSenha = new System.Windows.Forms.TextBox();
             this.txbUsuario = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.btnAcesso = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnCad);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txbSenha);
             this.panel1.Controls.Add(this.txbUsuario);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnSair);
             this.panel1.Controls.Add(this.btnAcesso);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(283, 189);
             this.panel1.TabIndex = 0;
+            // 
+            // btnCad
+            // 
+            this.btnCad.Location = new System.Drawing.Point(85, 147);
+            this.btnCad.Name = "btnCad";
+            this.btnCad.Size = new System.Drawing.Size(112, 23);
+            this.btnCad.TabIndex = 6;
+            this.btnCad.Text = "Cadastrar";
+            this.btnCad.UseVisualStyleBackColor = true;
+            this.btnCad.Click += new System.EventHandler(this.btnCad_Click);
             // 
             // label2
             // 
@@ -89,15 +99,15 @@
             this.txbUsuario.Size = new System.Drawing.Size(177, 22);
             this.txbUsuario.TabIndex = 1;
             // 
-            // button1
+            // btnSair
             // 
-            this.button1.Location = new System.Drawing.Point(153, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Sair";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSair.Location = new System.Drawing.Point(153, 112);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.TabIndex = 5;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnAcesso
             // 
@@ -108,16 +118,6 @@
             this.btnAcesso.Text = "Acessar";
             this.btnAcesso.UseVisualStyleBackColor = true;
             this.btnAcesso.Click += new System.EventHandler(this.btnAcesso_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(85, 147);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Cadastrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Logon
             // 
@@ -145,9 +145,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txbSenha;
         private System.Windows.Forms.TextBox txbUsuario;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnAcesso;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCad;
     }
 }
 

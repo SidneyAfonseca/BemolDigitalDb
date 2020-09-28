@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{4D1D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{B2925A08-F70B-4195-AEAA-D5B668007AC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{BD694B0A-9920-44A5-A599-1CCA672A195C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuscaCep.Teste", "UnitTest\BuscaCep.Teste.csproj", "{BD694B0A-9920-44A5-A599-1CCA672A195C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuscaCep", "ViaCep\BuscaCep.csproj", "{80A1E73A-E3F9-448D-9816-0D4736CD8372}"
 EndProject

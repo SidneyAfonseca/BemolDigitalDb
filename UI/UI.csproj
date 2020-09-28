@@ -89,7 +89,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{B2925A08-F70B-4195-AEAA-D5B668007AC3}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dados.csproj">
+      <Project>{B3070132-7D73-43BE-996F-7882932EAB75}</Project>
+      <Name>Dados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViaCep\BuscaCep.csproj">
+      <Project>{80a1e73a-e3f9-448d-9816-0d4736cd8372}</Project>
+      <Name>BuscaCep</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ui-test.ico" />
   </ItemGroup>

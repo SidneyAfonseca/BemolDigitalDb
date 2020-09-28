@@ -161,8 +161,9 @@
             this.mskTxbCep.Location = new System.Drawing.Point(100, 31);
             this.mskTxbCep.Mask = "00000-999";
             this.mskTxbCep.Name = "mskTxbCep";
-            this.mskTxbCep.Size = new System.Drawing.Size(106, 30);
+            this.mskTxbCep.Size = new System.Drawing.Size(111, 30);
             this.mskTxbCep.TabIndex = 1;
+            this.mskTxbCep.Leave += new System.EventHandler(this.mskTxbCep_Leave);
             // 
             // txbEstado
             // 
@@ -203,7 +204,6 @@
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(268, 30);
             this.txbNome.TabIndex = 1;
-            this.txbNome.Leave += new System.EventHandler(this.txbNome_Leave);
             // 
             // btnSalvar
             // 

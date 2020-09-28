@@ -13,7 +13,8 @@ namespace DataBase.Interfaces
         public EfContext EfContext { get;  set; }
         int Incluir(T obj);
         T Consultar(string a);
-        T Alterar(T obj);
+        T ValidarNomeSenha(string a,string b);
+        T Editar(T obj);
         int Remover(string a);
     }
 }
