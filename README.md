@@ -16,7 +16,7 @@ O projeto teve duração de três dia corridos. As tarefas foram divididas da se
 
 1 - Dia -> Instalação e configuração das ferramentas para a montagem do ambiente de desenvolvimento(Sql-Server, Visual Studio e conta no GitHub).
 
-2 - Dia -> Estudos de novas tecnologias(12hs), Criando o projeto- DesafioBemolDigital - Desenvolvimento (4hs).
+2 - Dia -> Estudos de novas tecnologias(12hs), Criando o projeto- BemolDigitalDb - Desenvolvimento (4hs).
 
 3 - Dia -> Aprimoramentos e testes na aplicação e check in no repositório(8hs), criação do arquivo README(4hs)
 
