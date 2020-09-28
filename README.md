@@ -36,13 +36,3 @@ Das instruções para configuração e utilização da aplicação
 7 - Clicar duas vezes em BemolDigitalDb.sln (para abrir a solução)
 
 8- Gerencias Pacotes NuGet.
-
-Diagrama de Design da Solução
-Diagrama de CONTEXTO
-Diagrama de Contexto
-
-Diagrama de CONTAINER
-Diagrama de Container
-
-Diagrama de COMPONENT
-Diagrama de Component
