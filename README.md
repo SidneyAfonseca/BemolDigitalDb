@@ -35,4 +35,6 @@ Das instruções para configuração e utilização da aplicação
 
 7 - Clicar duas vezes em BemolDigitalDb.sln (para abrir a solução)
 
-8- Gerencias Pacotes NuGet.
+8 - Dentro da Solução BemolDigitalDb  setar projeto UI como Projeto de Inicialização
+
+9- Gerencias Pacotes NuGet.
