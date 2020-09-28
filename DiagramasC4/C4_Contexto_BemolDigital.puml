@@ -1,0 +1,26 @@
+@startuml 
+!include Base\C4_Context.puml
+
+'LAYOUT_TOP_DOWN
+'LAYOUT_AS_SKETCH
+'LAYOUT_WITH_LEGEND
+LAYOUT_LEFT_RIGHT
+title Diagrama de Contexto do sistema Bemol
+
+Person(user, "Usuário", "Usuário do sistema , que cadastra e altera dados do seu usuário")
+
+System_Boundary(c0, " "){
+System(sistema, "Cadastro de Usuário", "Persitências das informações de usuários")
+}
+
+Rel(user, sistema, "Cadastra, altera Usuário")
+
+'não consegui deixar ela genérica para ser importada
+legend right
+|=              |= Type |
+|<PERSON_BG_COLOR>      | person |
+|<EXTERNAL_PERSON_BG_COLOR>      | external person |
+|<SYSTEM_BG_COLOR>   | system |
+|<EXTERNAL_SYSTEM_BG_COLOR>      | external system |
+endlegend
+@enduml

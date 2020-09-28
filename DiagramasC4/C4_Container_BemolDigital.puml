@@ -1,0 +1,29 @@
+@startuml "Cadastro de Usuario"
+
+!include Base\C4_Container.puml
+
+'LAYOUT_TOP_DOWN
+'LAYOUT_AS_SKETCH
+'LAYOUT_WITH_LEGEND
+LAYOUT_LEFT_RIGHT
+title Container: Cadastro de Usuario
+
+Person(user, "Usuário")
+
+System_Boundary(c1, "Container: Cadastro de Usuario"){
+    Container(winform, "Windows Forms Application", "C#, Web API REST, EF Core 3.1.6", "Permite o usuário preencher dados necessárioas para se cadastrar no sistema")
+    ContainerDb(rel_db, "Banco de Dados Relacional", "SQL Server Express 2017", "Inclui e altera e excluir dados do usuário")
+}
+
+Rel(user, winform, "Utiliza", "formulário")
+Rel(winform, rel_db, "Persistência")
+
+legend right
+|=              |= Type |
+|<PERSON_BG_COLOR>      | person |
+|<EXTERNAL_PERSON_BG_COLOR>      | external person |
+|<SYSTEM_BG_COLOR>   | system |
+|<EXTERNAL_SYSTEM_BG_COLOR>      | external system |
+|<CONTAINER_BG_COLOR>   | container |
+endlegend
+@enduml

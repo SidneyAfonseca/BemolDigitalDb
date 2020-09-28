@@ -1,0 +1,33 @@
+@startuml
+
+!include Base\C4_Component.puml
+
+title Componente: Formulário de cadastro de Usuario
+
+Container(frmCadU, "Fórmulário de cadastro de Usuário", "C#, Windows Forms", "Contempla todas as funcionalidades para realizar o cadastro do usuario.")
+
+ContainerDb(db, "Database", "Relational Database Schema", "Persiste os dados do usuario.")
+System_Ext(viaCepWS, "Webservice ViaCEP", "Informa detalhes do CEP consultado.")
+
+Container_Boundary(api, "Persistência do Usuario") {
+    Component(userCtl, "Entidade Usuario", "DDD", "Gerencia os serviços para a entidade")
+    Component(apiCep, "API FindCEP", "Web API", "Realiza as requisições de consumo o WebService ViaCEP.")
+
+    Rel(userCtl, db, "Leitura & Escrita em", "SQL Server Provider")
+    Rel(apiCep, viaCepWS, "Get", "Async, HTTPS")
+    Rel_Back(apiCep, viaCepWS, "Response", "JSON")
+}
+
+Rel(frmCadU, userCtl, "Utiliza")
+Rel(frmCadU, apiCep, "Utiliza")
+
+legend right
+|=              |= Type |
+|<PERSON_BG_COLOR>      | person |
+|<EXTERNAL_PERSON_BG_COLOR>      | external person |
+|<SYSTEM_BG_COLOR>   | system |
+|<EXTERNAL_SYSTEM_BG_COLOR>      | external system |
+|<CONTAINER_BG_COLOR>   | container |
+|<COMPONENT_BG_COLOR>   | component |
+endlegend
+@enduml
