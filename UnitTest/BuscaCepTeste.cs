@@ -15,7 +15,7 @@ namespace UnitTest
         {
             //Arrange
             BuscaCepRequest buscCep = new BuscaCepRequest();
-            string cep = "69050-001";
+            string cep = "69050-001"; 
             BuscaCepResponse response = new BuscaCepResponse();
             //Act
             response = buscCep.Pesquisar(cep.Replace("-",""));
